@@ -1,0 +1,14 @@
+# editor
+.vscode
+.idea
+.editorconfig
+.prettierrc
+
+# testing
+jest.config.js
+tests
+
+# typescript
+tsconfig.json
+source
+

@@ -1,0 +1,21 @@
+root = true
+
+[*]
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+indent_style = tab
+
+[*.{js,ts,json}]
+tab_width = 4
+
+[{package.json,package-lock.json,.prettierrc,jsconfig.json,tsconfig.json,.eslintrc}]
+tab_width = 2
+
+[*.{css,scss,sass}]
+indent_style = tab
+tab_width = 4
+
+[*.{md}]
+tab_width = 2
