@@ -29,14 +29,14 @@ Let's imagine we have the following project structure:
 ```
 project
 ├───components
-│   └───button
-│       ├───button.module.scss
-│	    └───button.component.js
+│	└───button
+│		├───button.module.scss
+│		└───button.component.js
 │
 └───resources
 	└───scss
-        ├───colors.scss
-	    └───utils.scss
+		├───colors.scss
+		└───utils.scss
 ```
 
 If we want to import colors into **button.module.scss** the resulting path should look like this
