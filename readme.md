@@ -24,7 +24,7 @@ sass-alias brings sass the capability to import files using aliasing, this make 
 
 ## Example
 
-Let's imagine we have the following project structure
+Let's imagine we have the following project structure:
 
 ```
 project
