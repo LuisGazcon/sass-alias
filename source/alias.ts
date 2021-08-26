@@ -1,7 +1,6 @@
 export type AliasJSON = {
 	[index: string]: string;
 };
-
 export class Alias {
 	public readonly unparsed: AliasJSON;
 	public readonly parsed: AliasJSON;

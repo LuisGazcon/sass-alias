@@ -4,7 +4,7 @@
 		"module": "commonjs",
 		"allowJs": false,
 		"declaration": true,
-		"declarationMap": true,
+		"declarationMap": false,
 		"sourceMap": true,
 		"removeComments": true,
 		"strict": true,

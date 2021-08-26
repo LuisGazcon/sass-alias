@@ -1,1 +1,5 @@
-export { SassAlias as default } from './sass-alias';
+/// <reference types="./sass-alias" />
+
+import { SassAlias } from './sass-alias';
+
+export = SassAlias;
