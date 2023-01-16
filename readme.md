@@ -63,12 +63,12 @@ If we use sass-alias the resulting path could look like this
 import path from 'path';
 import sass from 'sass';
 
-import SassAlias from 'sass-alias';
+import { create } from 'sass-alias';
 
 sass.renderSync({
-	importer: new SassAlias({
+	importer: create({
 		'@scss': path.join(__dirname, 'scss'),
-	}).getImporter(),
+	}),
 });
 ```
 
@@ -76,34 +76,30 @@ sass.renderSync({
 
 ```javascript
 // webpack.config.js
+
+const { create } = require('sass-alias');
+
 module.exports = {
-	/**
-	 * other webpack configuration
-	 */
 	module: {
 		rules: [
 			{
-				test:  /^.*\.(sass|scss)$/,
+				test: /^.*\.(sass|scss)$/,
 				use: [
-					/**
-					 * other loaders
-					 */
 					{
 						loader: 'sass-loader',
 						options: {
 							sassOptions: {
-								importer: importer: new SassAlias({
+								importer: create({
 									'@scss': path.join(__dirname, 'scss'),
-								}).getImporter(),
-							}
-						}
-					}
-				]
-			}
-		]
-	}
-}
-
+								}),
+							},
+						},
+					},
+				],
+			},
+		],
+	},
+};
 ```
 
 ## License

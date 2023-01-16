@@ -10,7 +10,7 @@ indent_style = tab
 [*.{js,ts,json}]
 tab_width = 4
 
-[{package.json,package-lock.json,.prettierrc,jsconfig.json,tsconfig.json,.eslintrc}]
+[{package.json,package-lock.json,.prettierrc,jsconfig.json,tsconfig.*.json,tsconfig.json,.eslintrc}]
 tab_width = 2
 
 [*.{css,scss,sass}]
