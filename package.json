@@ -9,8 +9,8 @@
 	"scripts": {
 		"dts": "npx npm-dts generate -o ./build/index.d.ts",
 		"prepare": "npm run build",
-		"test": "jest --verbose false",
-		"build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./source -o ./build",
+		"test": "jest --verbose false --roots ./tests",
+		"build": "tsc --project tsconfig.build.json && tscpaths -p tsconfig.build.json -s ./source -o ./build",
 		"dev": "nodemon -r tsconfig-paths/register sample/index.ts"
 	},
 	"author": "Luis Gazcón",
